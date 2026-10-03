@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f3f0fa" />
-    <meta name="description" content="A personal collection of image-making prompts. Explore AI transformations, compare original photographs, and copy a prompt to make it your own." />
+    <meta name="description" content="A personal collection of image-making prompts. Explore AI transformations, compare original photographs, and try a prompt in ChatGPT." />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>Lai’s AIGC Gallery — Reality, reimagined.</title>
     <script>
@@ -33,10 +33,9 @@
       </section>
       <section id="collection" class="collection" aria-labelledby="collection-title">
         <div class="collection-kicker"><span class="eyebrow"><span class="section-marker" aria-hidden="true"></span><span data-i18n="selectedLabel">SELECTED EXPERIMENTS</span></span><span class="section-number" aria-hidden="true">/ 01</span></div><div class="collection-heading"><div class="section-title"><h2 id="collection-title" data-i18n="collectionTitle">Ideas into images.</h2><span id="total-count" class="count-badge">02</span></div><span class="hover-hint"><span aria-hidden="true">↔</span><span data-i18n="hoverHint">Hover over an image to see where it started</span></span></div>
-        <div class="collection-tools"><div id="filters" class="filters" role="group"></div><div class="search-sort"><label class="search-box"><span id="search-icon" aria-hidden="true"></span><input id="search" type="search" autocomplete="off" /></label><label class="sort-box"><select id="sort"></select><span aria-hidden="true">↓</span></label></div></div>
-        <p class="result-status" id="result-status" aria-live="polite"></p>
+        <div class="collection-tools"><p class="result-status" id="result-status" aria-live="polite"></p><div class="search-sort"><label class="search-box"><span id="search-icon" aria-hidden="true"></span><input id="search" type="search" autocomplete="off" /></label><label class="sort-box"><select id="sort"></select><span aria-hidden="true">↓</span></label></div></div>
         <div id="gallery" class="gallery-grid" aria-busy="true"></div>
-        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">◇</span><h3 data-i18n="emptyTitle">No prompts found</h3><p data-i18n="emptyDescription">Try another search or explore the whole collection.</p><button id="reset-search" type="button" class="primary-button" data-i18n="reset">Reset filters</button></div>
+        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">◇</span><h3 data-i18n="emptyTitle">No prompts found</h3><p data-i18n="emptyDescription">Try another search or explore the whole collection.</p><button id="reset-search" type="button" class="primary-button" data-i18n="reset">Reset search</button></div>
         <p id="load-error" class="load-error" hidden></p>
         <div class="collection-end"><span></span><p data-i18n="collectionEnd">A small collection, with room to grow.</p><span></span></div>
       </section>

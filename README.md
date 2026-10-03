@@ -28,9 +28,10 @@ npm run preview     # serve the production build locally
 - The theme follows the system preference until a visitor chooses light or dark.
 - Generated images are the default covers. Hover to see the original photograph. A comparison button provides the same interaction on touchscreens and keyboards.
 - Click a card to see the uncropped, full-size image and full prompt. Switch between original/generated views, open either image at its native size, copy the prompt, or copy a direct link.
+- Cards and the detail view include **`Use in ChatGPT`**, which opens ChatGPT with the full original prompt. Upload your photograph there, then send the prompt to try it.
 - Prompts are copied exactly as stored (apart from surrounding whitespace). The sample prompts are English originals; the UI and entry titles are bilingual. The interface does not silently translate prompt text.
 - Entries with a source display **`Adapted from:`**, linking to the supplied source. Omit the source file when there is no source.
-- Search includes English/Chinese titles, tags, and prompt text. Filters and date sorting work entirely in the browser.
+- Search includes English/Chinese titles and prompt text. Search and date sorting work entirely in the browser.
 - The layout adapts to mobile screens, supports keyboard controls and Escape-to-close, and respects reduced-motion preferences.
 - The design uses a purple palette, large sans-serif typography, and a locally rendered 3D sculpture. The sculpture loads separately from the functional gallery, runs at up to 30 frames per second, pauses while offscreen or the tab is hidden, and stays still when reduced motion is enabled. A static geometric illustration remains available when WebGL is unsupported.
 
@@ -57,13 +58,11 @@ Example `entry.json`:
   "id": "my-new-prompt",
   "date": "2026-10-02",
   "title": { "en": "My new prompt", "zh": "我的新提示词" },
-  "category": "illustration",
-  "tags": ["impasto", "miniature", "photo-to-art"],
   "color": "#faf9f6"
 }
 ```
 
-The id must match the folder name and contain lowercase letters/numbers separated by hyphens. Both language versions of the title are required. No description field is needed. Dates use `YYYY-MM-DD`. Supported categories are `illustration` and `photographic`. The optional color is the image's background. Tags can be arbitrary strings; add their UI translations to `translations` in `src/app.js` if needed. New categories require updating both `scripts/catalog.mjs` and the translations.
+The id must match the folder name and contain lowercase letters/numbers separated by hyphens. Both language versions of the title are required. No description field is needed. Dates use `YYYY-MM-DD`. The optional color is the image's background.
 
 ## Add a prompt with one command
 
@@ -75,8 +74,6 @@ npm run add -- \
   --id "my-new-prompt" \
   --title "My new prompt" \
   --title-zh "我的新提示词" \
-  --category "illustration" \
-  --tags "impasto,miniature,photo-to-art" \
   --date "2026-10-02"
 ```
 
@@ -166,7 +163,7 @@ npx playwright install chromium
 npm test
 ```
 
-The checks cover desktop/mobile interactions, actual clipboard contents, original-image comparison, deep links, filtering/sorting, Chinese browser defaults, preference persistence, and horizontal overflow.
+The checks cover desktop/mobile interactions, actual clipboard contents, ChatGPT prompt links, original-image comparison, deep links, search/sorting, Chinese browser defaults, preference persistence, and horizontal overflow.
 
 ## Attribution and reuse
 

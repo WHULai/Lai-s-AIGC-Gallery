@@ -3,10 +3,10 @@ import { access, copyFile, mkdir, readFile, readdir, rename, rm, writeFile } fro
 import path from 'node:path';
 import { root, readEntry, imagePattern } from './catalog.mjs';
 
-const { values } = parseArgs({ options: Object.fromEntries(['from', 'id', 'title', 'title-zh', 'category', 'tags', 'date', 'source'].map(key => [key, { type: 'string' }])) });
-const required = ['from', 'id', 'title', 'title-zh', 'category'];
+const { values } = parseArgs({ options: Object.fromEntries(['from', 'id', 'title', 'title-zh', 'date', 'source'].map(key => [key, { type: 'string' }])) });
+const required = ['from', 'id', 'title', 'title-zh'];
 if (required.some(key => !values[key])) {
-  console.error(`Usage: npm run add -- --from ./incoming --id my-prompt --title "English title" --title-zh "中文标题" --category illustration [--tags impasto,miniature] [--date YYYY-MM-DD] [--source https://example.com]\nThe input folder needs prompt.txt (or prompt), generated.* (or AIGC.*), and original.* (or Original.*). source.txt (or source) is optional.`);
+  console.error(`Usage: npm run add -- --from ./incoming --id my-prompt --title "English title" --title-zh "中文标题" [--date YYYY-MM-DD] [--source https://example.com]\nThe input folder needs prompt.txt (or prompt), generated.* (or AIGC.*), and original.* (or Original.*). source.txt (or source) is optional.`);
   process.exit(1);
 }
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(values.id)) throw new Error('Use a lowercase, hyphen-separated id.');
@@ -29,7 +29,7 @@ try {
   const source = values.source ?? (sourceFile ? await readFile(path.join(incoming, sourceFile), 'utf8') : '');
   if (source.trim()) await writeFile(path.join(temporary, 'source.txt'), source.trim() + '\n');
   const date = values.date || new Intl.DateTimeFormat('sv-SE').format(new Date());
-  const metadata = { id: values.id, date, title: { en: values.title, zh: values['title-zh'] }, category: values.category, tags: (values.tags || '').split(',').map(tag => tag.trim()).filter(Boolean) };
+  const metadata = { id: values.id, date, title: { en: values.title, zh: values['title-zh'] } };
   await writeFile(path.join(temporary, 'entry.json'), JSON.stringify(metadata, null, 2) + '\n');
   // Validate under its final id before publishing the new entry locally.
   await rename(temporary, destination);

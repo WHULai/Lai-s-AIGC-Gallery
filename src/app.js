@@ -26,32 +26,31 @@ const translations = {
     eyebrow: 'AN EXPLORATION IN AI IMAGE MAKING', heroLine1: 'Reality,', heroLine2: 'reimagined.',
     heroDescription: 'Your photographs. A different dimension.\nExplore creative prompts that turn the familiar into the unexpected.',
     explore: 'Explore the gallery', madeWith: 'Real photographs. New possibilities.', collectionTitle: 'Ideas into images.', scroll: 'SCROLL TO EXPLORE', selectedLabel: 'SELECTED EXPERIMENTS', aboutLabel: 'THE EXPERIMENT CONTINUES',
-    hoverHint: 'Hover over an image to see where it started', all: 'All prompts', illustration: 'Illustration', photographic: 'Photographic',
-    search: 'Search prompts…', newest: 'Newest first', oldest: 'Oldest first', sort: 'Sort prompts', filters: 'Filter by style',
-    emptyTitle: 'No prompts found', emptyDescription: 'Try another search or explore the whole collection.', reset: 'Reset filters',
+    hoverHint: 'Hover over an image to see where it started',
+    search: 'Search prompts…', newest: 'Newest first', oldest: 'Oldest first', sort: 'Sort prompts',
+    emptyTitle: 'No prompts found', emptyDescription: 'Try another search or explore the whole collection.', reset: 'Reset search',
     collectionEnd: 'More experiments on the way.', aboutTitle: 'Keep experimenting.',
     aboutDescription: 'An evolving notebook of image-making experiments by Lai. Each prompt comes with a real result and its original photograph, so you can see the idea in action. Bring your own image, copy a prompt, and see what happens.',
     onGithub: 'Explore on GitHub', footerNote: 'Independent experiments. Open possibilities.', backTop: 'Back to top ↑',
-    copy: 'Copy prompt', copied: 'Copied!', copySuccess: 'Prompt copied. Make it your own.', copyFailed: 'Copy failed. Open the prompt and select its text to copy manually.',
+    copy: 'Copy prompt', useChatGPT: 'Use in ChatGPT', copied: 'Copied!', copySuccess: 'Prompt copied. Make it your own.', copyFailed: 'Copy failed. Open the prompt and select its text to copy manually.',
     generated: 'AI creation', original: 'Original photo', showOriginal: 'See original', showGenerated: 'See AI creation', open: 'Explore prompt',
     detailLabel: 'THE IDEA BEHIND THE IMAGE', promptLabel: 'The prompt', promptLanguage: 'Original · English',
-    usePhoto: 'Start with your own photo', useDescription: 'Upload a photograph to your image generator, then paste this prompt. Results vary with the model and source image.',
+    usePhoto: 'Start with your own photo', useDescription: 'Use in ChatGPT opens a new tab with this prompt ready. Upload your photo there, then send it. Or copy the prompt into your preferred image generator.',
     close: 'Close prompt', fullSize: 'Open full-size image', share: 'Copy link', linkCopied: 'Prompt link copied.', themeDark: 'Switch to dark mode', themeLight: 'Switch to light mode', language: 'Switch to Chinese',
     loading: 'Gathering a little inspiration…', loadError: 'The collection could not be loaded. Please refresh the page.',
-    impasto: 'Impasto', miniature: 'Miniature', 'photo-to-art': 'Photo to art', surreal: 'Surreal', paper: 'Paper',
     results: (count, total) => `Showing ${count} of ${total} prompts`, sourceName: 'Xiaohongshu',
   },
   zh: {
     skip: '跳转至作品集', collection: '作品集', about: '关于', eyebrow: '探索 AI 影像创作的可能性', heroLine1: '熟悉的照片，', heroLine2: '全新的世界。',
     heroDescription: '你的照片，另一个维度。\n用创意提示词，让熟悉的画面变成意想不到的作品。', explore: '探索作品集', madeWith: '真实的照片，全新的可能。', collectionTitle: '让想法成为图像。', scroll: '向下探索', selectedLabel: '精选创作实验', aboutLabel: '实验，还在继续',
-    hoverHint: '悬停图片，看看灵感从哪里开始', all: '全部提示词', illustration: '插画', photographic: '摄影创作', search: '搜索提示词…', newest: '最新优先', oldest: '最早优先', sort: '提示词排序', filters: '按风格筛选',
-    emptyTitle: '没有找到提示词', emptyDescription: '换个关键词，或浏览全部作品。', reset: '重置筛选', collectionEnd: '新的实验，持续发生。',
+    hoverHint: '悬停图片，看看灵感从哪里开始', search: '搜索提示词…', newest: '最新优先', oldest: '最早优先', sort: '提示词排序',
+    emptyTitle: '没有找到提示词', emptyDescription: '换个关键词，或浏览全部作品。', reset: '清空搜索', collectionEnd: '新的实验，持续发生。',
     aboutTitle: '继续，探索。', aboutDescription: '这是 Lai 持续更新的 AI 生图实验笔记。每份提示词都配有真实成果和原始照片，让想法的变化清晰可见。带上你的照片，复制一份提示词，看看会发生什么。',
-    onGithub: '在 GitHub 上继续探索', footerNote: '独立创作，开放可能。', backTop: '回到顶部 ↑', copy: '复制提示词', copied: '已复制！', copySuccess: '提示词已复制，开始你的创作吧。',
+    onGithub: '在 GitHub 上继续探索', footerNote: '独立创作，开放可能。', backTop: '回到顶部 ↑', copy: '复制提示词', useChatGPT: '在 ChatGPT 中使用', copied: '已复制！', copySuccess: '提示词已复制，开始你的创作吧。',
     copyFailed: '复制失败，请打开详情并手动选择提示词文字复制。', generated: 'AI 生成', original: '原始照片', showOriginal: '查看原图', showGenerated: '查看 AI 成果', open: '查看提示词',
-    detailLabel: '图像背后的想法', promptLabel: '完整提示词', promptLanguage: '原始文本 · 英文', usePhoto: '从你的照片开始', useDescription: '将照片上传至生图工具，然后粘贴这份提示词。生成效果会因模型和原始图片而异。',
+    detailLabel: '图像背后的想法', promptLabel: '完整提示词', promptLanguage: '原始文本 · 英文', usePhoto: '从你的照片开始', useDescription: '点击「在 ChatGPT 中使用」，即可在新标签页带入完整提示词。上传你的照片后发送，也可以复制到你常用的生图工具。',
     close: '关闭详情', fullSize: '打开完整尺寸图片', share: '复制链接', linkCopied: '提示词链接已复制。', themeDark: '切换深色模式', themeLight: '切换浅色模式', language: 'Switch to English',
-    loading: '正在收集一点灵感…', loadError: '无法加载作品集，请刷新页面重试。', impasto: '厚涂', miniature: '微缩景观', 'photo-to-art': '照片转艺术', surreal: '超现实', paper: '纸张',
+    loading: '正在收集一点灵感…', loadError: '无法加载作品集，请刷新页面重试。',
     results: (count, total) => `显示 ${count} / ${total} 份提示词`, sourceName: '小红书',
   },
 };
@@ -60,7 +59,6 @@ const savePreference = (key, value) => { try { localStorage.setItem(key, value);
 let language = ['en', 'zh'].includes(readPreference('gallery-language')) ? readPreference('gallery-language') : navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
 let theme = ['light', 'dark'].includes(readPreference('gallery-theme')) ? readPreference('gallery-theme') : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 let entries = [];
-let filter = 'all';
 let activeEntry = null;
 let detailImage = 'generated';
 let toastTimer;
@@ -68,6 +66,8 @@ const $ = selector => document.querySelector(selector);
 const t = key => translations[language][key] ?? key;
 const localized = field => field[language] || field.en;
 const asset = url => new URL(url, document.baseURI).href;
+const chatGPTLink = entry => `https://chatgpt.com/?prompt=${encodeURIComponent(entry.prompt)}`;
+const chatGPTMarkup = (entry, id = '') => `<a class="chatgpt-button" ${id ? `id="${id}"` : ''} href="${escape(chatGPTLink(entry))}" target="_blank" rel="noopener noreferrer">${icon('external')}<span>${t('useChatGPT')}</span></a>`;
 const formatDate = date => new Intl.DateTimeFormat(language === 'zh' ? 'zh-CN' : 'en', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
 function sourceMarkup(entry) {
   if (!entry.source) return '';
@@ -93,19 +93,13 @@ function updateLanguage() {
   $('#sort').innerHTML = `<option value="newest">${t('newest')}</option><option value="oldest">${t('oldest')}</option>`;
   $('#sort').value = sort;
   $('#sort').setAttribute('aria-label', t('sort'));
-  $('#filters').setAttribute('aria-label', t('filters'));
   updateTheme();
-  renderFilters();
   renderGallery();
   if (activeEntry) renderDetail();
 }
-function renderFilters() {
-  const categories = ['all', ...new Set(entries.map(entry => entry.category))];
-  $('#filters').innerHTML = categories.map(category => `<button type="button" data-filter="${category}" class="filter-button ${filter === category ? 'active' : ''}" aria-pressed="${filter === category}">${t(category)}${category === 'all' ? `<span>${entries.length}</span>` : ''}</button>`).join('');
-}
 function renderGallery() {
   const query = $('#search').value.trim().toLocaleLowerCase();
-  const visible = entries.filter(entry => (filter === 'all' || entry.category === filter) && (!query || [entry.title.en, entry.title.zh, entry.prompt, ...entry.tags, ...entry.tags.map(t), t(entry.category)].join(' ').toLocaleLowerCase().includes(query)));
+  const visible = entries.filter(entry => !query || [entry.title.en, entry.title.zh, entry.prompt].join(' ').toLocaleLowerCase().includes(query));
   visible.sort((a, b) => ($('#sort').value === 'oldest' ? a.date.localeCompare(b.date) : b.date.localeCompare(a.date)) || a.id.localeCompare(b.id));
   $('#total-count').textContent = String(entries.length).padStart(2, '0');
   $('#result-status').textContent = entries.length ? t('results')(visible.length, entries.length) : t('loading');
@@ -114,13 +108,13 @@ function renderGallery() {
     <div class="card-visual"><button class="image-open" type="button" data-action="open" aria-label="${escape(t('open') + ': ' + localized(entry.title))}"><img class="generated-image" src="${asset(entry.generatedThumb)}" alt="${escape(localized(entry.title))}" width="${entry.generatedSize.width}" height="${entry.generatedSize.height}" ${index > 1 ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" /><img class="original-image" src="${asset(entry.originalThumb)}" alt="" aria-hidden="true" width="${entry.originalSize.width}" height="${entry.originalSize.height}" loading="lazy" decoding="async" /></button>
       <span class="image-badge generated-badge"><span class="badge-dot"></span>${t('generated')}</span><span class="image-badge original-badge">${t('original')}</span><span class="open-indicator" aria-hidden="true">↗</span>
       <button class="compare-button" data-action="compare" type="button" aria-pressed="false">↔ <span>${t('showOriginal')}</span></button></div>
-    <div class="card-body"><div class="card-meta"><span>${t(entry.category)}</span><time datetime="${entry.date}">${formatDate(entry.date)}</time></div><h3><button data-action="open" type="button">${escape(localized(entry.title))}</button></h3><div class="tags">${entry.tags.map(tag => `<span>${escape(t(tag))}</span>`).join('')}</div><div class="card-bottom">${sourceMarkup(entry)}<button class="copy-button" data-action="copy" type="button">${icon('copy')}<span>${t('copy')}</span></button></div></div>
+    <div class="card-body"><div class="card-meta"><time datetime="${entry.date}">${formatDate(entry.date)}</time></div><h3><button data-action="open" type="button">${escape(localized(entry.title))}</button></h3><div class="card-bottom">${sourceMarkup(entry)}<div class="card-actions"><button class="copy-button" data-action="copy" type="button">${icon('copy')}<span>${t('copy')}</span></button>${chatGPTMarkup(entry)}</div></div></div>
   </article>`).join('');
 }
 function renderDetail() {
   const entry = activeEntry;
   const scroll = $('#detail-content .detail-copy')?.scrollTop || 0;
-  $('#detail-content').innerHTML = `<div class="detail-layout"><div class="detail-viewer"><div class="detail-image-toolbar"><div class="image-tabs" role="group" aria-label="${t('original')} / ${t('generated')}"><button type="button" data-view="generated" aria-pressed="${detailImage === 'generated'}">${t('generated')}</button><button type="button" data-view="original" aria-pressed="${detailImage === 'original'}">${t('original')}</button></div><a class="icon-button" id="full-size-link" href="${asset(entry[detailImage])}" target="_blank" rel="noopener noreferrer" aria-label="${t('fullSize')}" title="${t('fullSize')}">${icon('external')}</a></div><div class="detail-image-wrap" style="--image-bg:${entry.color || '#f4f1eb'}"><img id="detail-image" src="${asset(entry[detailImage])}" alt="${escape(localized(entry.title) + ' — ' + t(detailImage))}" /></div><div class="detail-image-caption"><span>${t(entry.category)}</span><span>${formatDate(entry.date)}</span></div></div><div class="detail-copy"><div class="detail-top"><span class="eyebrow">${t('detailLabel')}</span><button class="icon-button" id="close-dialog" type="button" aria-label="${t('close')}">${icon('close')}</button></div><h2 id="detail-title">${escape(localized(entry.title))}</h2>${sourceMarkup(entry)}<div class="usage-note"><span aria-hidden="true">↗</span><div><strong>${t('usePhoto')}</strong><p>${t('useDescription')}</p></div></div><div class="prompt-heading"><h3>${t('promptLabel')}</h3><span>${t('promptLanguage')}</span></div><pre class="prompt-text" tabindex="0">${escape(entry.prompt)}</pre><div class="detail-actions"><button type="button" class="primary-button" id="detail-copy-button">${icon('copy')}<span>${t('copy')}</span></button><button type="button" class="secondary-button" id="share-button">${icon('external')}<span>${t('share')}</span></button></div></div></div>`;
+  $('#detail-content').innerHTML = `<div class="detail-layout"><div class="detail-viewer"><div class="detail-image-toolbar"><div class="image-tabs" role="group" aria-label="${t('original')} / ${t('generated')}"><button type="button" data-view="generated" aria-pressed="${detailImage === 'generated'}">${t('generated')}</button><button type="button" data-view="original" aria-pressed="${detailImage === 'original'}">${t('original')}</button></div><a class="icon-button" id="full-size-link" href="${asset(entry[detailImage])}" target="_blank" rel="noopener noreferrer" aria-label="${t('fullSize')}" title="${t('fullSize')}">${icon('external')}</a></div><div class="detail-image-wrap" style="--image-bg:${entry.color || '#f4f1eb'}"><img id="detail-image" src="${asset(entry[detailImage])}" alt="${escape(localized(entry.title) + ' — ' + t(detailImage))}" /></div><div class="detail-image-caption"><time datetime="${entry.date}">${formatDate(entry.date)}</time></div></div><div class="detail-copy"><div class="detail-top"><span class="eyebrow">${t('detailLabel')}</span><button class="icon-button" id="close-dialog" type="button" aria-label="${t('close')}">${icon('close')}</button></div><h2 id="detail-title">${escape(localized(entry.title))}</h2>${sourceMarkup(entry)}<div class="usage-note"><span aria-hidden="true">↗</span><div><strong>${t('usePhoto')}</strong><p>${t('useDescription')}</p></div></div><div class="prompt-heading"><h3>${t('promptLabel')}</h3><span>${t('promptLanguage')}</span></div><pre class="prompt-text" tabindex="0">${escape(entry.prompt)}</pre><div class="detail-actions"><button type="button" class="primary-button" id="detail-copy-button">${icon('copy')}<span>${t('copy')}</span></button>${chatGPTMarkup(entry, 'detail-chatgpt-button')}<button type="button" class="secondary-button" id="share-button">${icon('external')}<span>${t('share')}</span></button></div></div></div>`;
   $('#detail-content .detail-copy').scrollTop = scroll;
 }
 function syncDialog() {
@@ -172,15 +166,9 @@ $('#search-icon').innerHTML = icon('search');
 $('#language-toggle').addEventListener('click', () => { language = language === 'en' ? 'zh' : 'en'; savePreference('gallery-language', language); updateLanguage(); });
 $('#theme-toggle').addEventListener('click', () => { theme = theme === 'light' ? 'dark' : 'light'; savePreference('gallery-theme', theme); updateTheme(); });
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => { if (!readPreference('gallery-theme')) { theme = event.matches ? 'dark' : 'light'; updateTheme(); } });
-$('#filters').addEventListener('click', event => {
-  const button = event.target.closest('[data-filter]');
-  if (!button) return;
-  filter = button.dataset.filter; renderFilters(); renderGallery();
-  $(`[data-filter="${filter}"]`).focus();
-});
 $('#search').addEventListener('input', renderGallery);
 $('#sort').addEventListener('change', renderGallery);
-$('#reset-search').addEventListener('click', () => { filter = 'all'; $('#search').value = ''; renderFilters(); renderGallery(); $('#search').focus(); });
+$('#reset-search').addEventListener('click', () => { $('#search').value = ''; renderGallery(); $('#search').focus(); });
 $('#gallery').addEventListener('click', event => {
   const card = event.target.closest('.prompt-card');
   if (!card || event.target.closest('a')) return;
@@ -217,7 +205,7 @@ try {
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   entries = await response.json();
   $('#gallery').setAttribute('aria-busy', 'false');
-  renderFilters(); renderGallery(); syncDialog();
+  renderGallery(); syncDialog();
   if (!entries.length) { $('#result-status').textContent = t('results')(0, 0); $('#empty-state').hidden = false; }
 } catch (error) {
   console.error('Unable to load gallery:', error);
