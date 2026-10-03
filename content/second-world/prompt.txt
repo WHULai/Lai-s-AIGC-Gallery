@@ -1,0 +1,138 @@
+Please generate a “Second World” photographic re-creation poster based on the photo I uploaded.
+
+Aspect Ratio and Output Rules:
+
+The final image ratio must be 2:3, and the orientation must match the original photo:
+If the original is portrait → output a 2:3 portrait image;
+If the original is landscape → output a 3:2 landscape image.
+
+The final output must be only the generated “Second World” artwork.
+
+The original photo should serve only as a reference for composition, subject, texture, color, light and shadow, and creative structure. Do not place the original photo into the final image again. Do not create a top-bottom split, left-right juxtaposition, before-after comparison, photo-within-photo, or diptych structure between the original and the generated image.
+
+The entire final artwork must be a complete, unified “Second World” photographic re-creation poster.
+
+Core Idea:
+
+Carefully observe the most recognizable visual structures in the original photo, such as water ripples, tree canopy, clouds, mountain ridges, shadows, architectural openings, roads, reflections, windows, roofs, people, or standalone objects.
+
+Choose the most suitable core structure from them, “extend it out” from its original photographic space, and transform it into a touchable, usable “photographic object” with real physical properties, making it the main visual idea of the entire artwork.
+
+For example, a structure from the original image can be transformed into: a lifted piece of photographic material, a thin sheet, a piece of cloth, a window, a hole, a water surface, a road, an architectural structure, a folded space, a curled surface, or another physical photographic form.
+
+This photographic object must:
+
+Retain the real photographic texture, material, light and shadow, and color of the original photo;
+
+Have an obvious 3D sense and a real physical presence;
+
+Be able to show edge thickness, slight curling, folding up, lifting, suspension, bending, or layering;
+
+Have natural cast shadows, perspective relationships, and a realistic sense of contact with the background surface;
+
+Look as if a real scene from the photo has broken through two-dimensional space and become an entity that can be touched and manipulated;
+
+Not be merely an ordinary “torn paper edge” effect;
+
+Occupy enough visual area to become the core of the artwork, rather than shrinking into a small decoration.
+
+Background and Composition:
+
+Use a warm off-white paper background + large areas of negative space as the visual foundation.
+
+Naturally integrate the real photographic elements extracted from the original photo into the paper space, so that a slight handmade collage relationship forms between the photographic subject and the paper.
+
+Keep the composition clean, restrained, and designed; do not fill the image up.
+
+Even when viewed independently from the original photo, it must still stand as a complete photographic art poster, not a simple effect of “the original image cut out and pasted onto white paper.”
+
+Subject Locking Rules:
+
+First identify the core subject with the highest visual weight and the strongest recognizability in the original photo.
+
+If the photo contains a clear landmark building, person, animal, vehicle, or standalone object, then all creativity for the “Second World” must prioritize that subject.
+
+The subject must:
+
+Be complete, clear, and recognizable;
+
+Retain real photographic texture;
+
+Preserve the original silhouette, proportions, color, and key visual features as much as possible;
+
+Not be replaced by background elements such as sky, water, road, or clouds;
+
+Not disappear, be severely cropped into fragments, or be reduced to a small decoration.
+
+Creativity may change the subject’s physical properties, for example making a building fold like a sheet of paper, turning a road into a spreadable ribbon-like structure, making a water surface float or curl, or turning a window into a three-dimensional entrance, but it must not change the subject’s identity.
+
+At first glance, the viewer must still be able to recognize the core subject from the original photo.
+
+People and Interaction:
+
+You may add 0–2 minimalist black line-art figures.
+
+The figures are not decoration; they must genuinely participate in physical interaction with the photographic object, for example:
+
+Pulling open, pushing open, propping up, flattening, rowing across, entering, climbing, lifting, repairing, unfolding, holding up, observing.
+
+The scale of the figures may be appropriately reduced to reinforce the huge, touchable “Second World” spatial feeling of the photographic subject.
+
+Do not pile up a large number of figures.
+
+Text:
+
+You may add one very short handwritten English caption.
+
+The copy should be natural, relaxed, restrained, and slightly humorous or imaginative, related to the interactive relationship in the image.
+
+No chicken-soup platitudes, no motivational quotes, no advertising copy, and do not repeatedly use clichéd sentence patterns such as “Same..., different...”
+
+Visual Style:
+
+Real photography + warm off-white paper + minimalist black line doodles + real 3D photographic object + slight handmade collage texture + independent art magazine aesthetic.
+
+The overall feeling should be:
+
+Clean, restrained, bright, quiet, clever, spatial, and visually striking at first glance without being over-designed.
+
+Preserve the texture of real photography itself; do not redraw the subject as an illustration.
+
+Strictly Prohibited:
+
+Placing the complete original photo into the final artwork again;
+
+A top-bottom split, left-right juxtaposition, or before-after comparison between the original and the generated image;
+
+Photo nesting, Polaroid frames, or the simple template of “a photo pasted onto a background”;
+
+Redrawing or illustrating the entire image;
+
+Making only a templated “torn paper + little figure” effect;
+
+The photographic subject disappearing, leaving only line-art figures;
+
+The photographic object being too small in area and reduced to decoration;
+
+The subject being replaced by background elements;
+
+Randomly adding leaves, stars, hearts, flowers, or other decorations unrelated to the original image;
+
+A commercial advertising feel;
+
+A complex illustration feel;
+
+Dense elements;
+
+Too much text;
+
+Changing the identity of the core subject in the original photo.
+
+Final Emphasis:
+
+The final image must make people clearly feel:
+
+“A real subject from the original photo has broken through the boundary of two-dimensional photography, entered a Second World on a warm off-white paper surface, and become a real, three-dimensional photographic object that can be touched and used.”
+
+It must have the three-dimensionality of real photographic material, not an ordinary white background with line-art figures.
+Even if the original photo is not shown in the final piece, viewers should still clearly sense the core subject, real photographic texture, and original visual features of the original photo from the generated artwork.

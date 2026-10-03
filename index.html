@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f0fa" />
+    <meta name="description" content="A personal collection of image-making prompts. Explore AI transformations, compare original photographs, and copy a prompt to make it your own." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Lai’s AIGC Gallery — Reality, reimagined.</title>
+    <script>
+      try {
+        const preference = localStorage.getItem('gallery-theme');
+        document.documentElement.dataset.theme = preference || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.lang = localStorage.getItem('gallery-language') || (navigator.language.toLowerCase().startsWith('zh') ? 'zh-CN' : 'en');
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#collection" data-i18n="skip">Skip to the collection</a>
+    <header class="site-header">
+      <a href="./" class="brand" aria-label="Lai’s AIGC Gallery home"><img src="./favicon.svg" width="36" height="36" alt="" /><span>Lai’s<span class="brand-subtitle">AIGC GALLERY</span></span></a>
+      <div class="header-right">
+        <nav aria-label="Main navigation"><a class="nav-active" href="#collection" data-i18n="collection">Collection</a><a href="#about" data-i18n="about">About</a></nav>
+        <div class="header-controls"><button id="language-toggle" class="language-toggle" type="button"></button><span class="control-divider"></span><button id="theme-toggle" class="icon-button" type="button"></button></div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-topline"><div class="eyebrow"><span class="section-marker" aria-hidden="true"></span><span data-i18n="eyebrow">AN EXPLORATION IN AI IMAGE MAKING</span></div><span class="hero-edition">LAI’S / VOL. 01</span></div>
+        <div class="hero-art" id="hero-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-shadow"></div><svg class="hero-fallback" viewBox="0 0 600 600" fill="none"><defs><linearGradient id="ribbon-color" x1="100" y1="70" x2="500" y2="540" gradientUnits="userSpaceOnUse"><stop stop-color="#d8cbff"/><stop offset=".45" stop-color="#8e60f1"/><stop offset="1" stop-color="#412077"/></linearGradient></defs><path d="M300 60 530 280 310 535 70 305Z" stroke="url(#ribbon-color)" stroke-width="78" stroke-linejoin="round"/><path d="m300 90 180 190-170 205-180-180Z" stroke="#d9c2ff" stroke-width="3" opacity=".65"/></svg></div>
+        <div class="hero-copy"><h1 id="hero-title"><span data-i18n="heroLine1">Reality,</span><br /><em data-i18n="heroLine2">reimagined.</em><span class="title-period" aria-hidden="true">↗</span></h1><p class="hero-description" data-i18n="heroDescription">Your photographs. A different dimension.<br />Explore creative prompts that turn the familiar into the unexpected.</p><a class="browse-link" href="#collection"><span data-i18n="explore">Explore the gallery</span><span class="button-arrow" aria-hidden="true">↗</span></a></div>
+        <div class="hero-bottom"><span class="scroll-cue"><span aria-hidden="true">↓</span><span data-i18n="scroll">SCROLL TO EXPLORE</span></span><span class="hero-note"><span class="status-dot"></span><span data-i18n="madeWith">Real photographs. New possibilities.</span></span><span class="hero-coordinate" aria-hidden="true">01 — ∞</span></div>
+      </section>
+      <section id="collection" class="collection" aria-labelledby="collection-title">
+        <div class="collection-kicker"><span class="eyebrow"><span class="section-marker" aria-hidden="true"></span><span data-i18n="selectedLabel">SELECTED EXPERIMENTS</span></span><span class="section-number" aria-hidden="true">/ 01</span></div><div class="collection-heading"><div class="section-title"><h2 id="collection-title" data-i18n="collectionTitle">Ideas into images.</h2><span id="total-count" class="count-badge">02</span></div><span class="hover-hint"><span aria-hidden="true">↔</span><span data-i18n="hoverHint">Hover over an image to see where it started</span></span></div>
+        <div class="collection-tools"><div id="filters" class="filters" role="group"></div><div class="search-sort"><label class="search-box"><span id="search-icon" aria-hidden="true"></span><input id="search" type="search" autocomplete="off" /></label><label class="sort-box"><select id="sort"></select><span aria-hidden="true">↓</span></label></div></div>
+        <p class="result-status" id="result-status" aria-live="polite"></p>
+        <div id="gallery" class="gallery-grid" aria-busy="true"></div>
+        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">◇</span><h3 data-i18n="emptyTitle">No prompts found</h3><p data-i18n="emptyDescription">Try another search or explore the whole collection.</p><button id="reset-search" type="button" class="primary-button" data-i18n="reset">Reset filters</button></div>
+        <p id="load-error" class="load-error" hidden></p>
+        <div class="collection-end"><span></span><p data-i18n="collectionEnd">A small collection, with room to grow.</p><span></span></div>
+      </section>
+      <section id="about" class="about-strip"><div class="about-topline"><span class="eyebrow" data-i18n="aboutLabel">THE EXPERIMENT CONTINUES</span><span aria-hidden="true">/ 02</span></div><div class="about-content"><h2 data-i18n="aboutTitle">Keep experimenting.</h2><div class="about-copy"><p data-i18n="aboutDescription">An evolving notebook of image-making experiments by Lai. Each prompt comes with a real result and its original photograph, so you can see the idea in action. Bring your own image, copy a prompt, and see what happens.</p></div></div><span class="about-decoration" aria-hidden="true">↗</span></section>
+    </main>
+    <footer><p>© <span id="year"></span> Lai’s AIGC Gallery</p><p data-i18n="footerNote">A little experiment in seeing things differently.</p><a href="#" data-i18n="backTop">Back to top ↑</a></footer>
+    <dialog id="prompt-dialog" aria-labelledby="detail-title"><div id="detail-content"></div></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript><p class="noscript">Please enable JavaScript to browse the prompts. 请启用 JavaScript 以浏览提示词。</p></noscript>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

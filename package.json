@@ -1,0 +1,28 @@
+{
+  "name": "lais-aigc-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "content": "node scripts/prepare-content.mjs",
+    "dev": "npm run content && vite --host 127.0.0.1 --port 4173",
+    "build": "npm run content && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "add": "node scripts/add-prompt.mjs",
+    "cf:login": "wrangler login --scopes account:read user:read pages:write",
+    "deploy": "node scripts/deploy.mjs",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.2",
+    "wrangler": "^4.147.0"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}
