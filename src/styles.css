@@ -207,7 +207,14 @@ dialog::backdrop { background: #0c071bb8; backdrop-filter: blur(8px); }
 .prompt-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
 .prompt-heading h3 { font: 500 23px var(--mono); letter-spacing: -.7px; margin: 0; }
 .prompt-heading > span { font-size: 9px; color: var(--muted); }
+.prompt-edit-hint { display: flex; align-items: flex-start; gap: 8px; font-size: 10px; line-height: 1.7; color: var(--muted); margin: -4px 0 14px; }
+.prompt-edit-swatch { flex-shrink: 0; width: 11px; height: 11px; margin-top: 3px; border-radius: 2px; background: #ffe58a; }
 .prompt-text { font: 12px/1.9 'Manrope', sans-serif; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--text); padding: 19px; border: 1px solid var(--line); margin: 0; }
+.prompt-parameter { background: #ffe58a; color: #35270a; padding: 2px 4px; border-radius: 3px; cursor: text; box-decoration-break: clone; -webkit-box-decoration-break: clone; caret-color: #35270a; }
+.prompt-parameter:hover { background: #ffda61; }
+.prompt-parameter:focus { outline: 2px solid #c38d13; outline-offset: 2px; background: #ffdf70; }
+.prompt-parameter:empty { display: inline-block; min-width: 2ch; min-height: 1em; vertical-align: baseline; }
+.prompt-parameter::selection { background: #c38d1366; }
 .detail-actions { position: sticky; bottom: -28px; display: flex; flex-wrap: wrap; gap: 10px; margin: 20px -5px -4px; padding: 15px 5px; background: var(--surface); border-top: 1px solid var(--line); }
 .detail-actions .chatgpt-button { font-size: 12px; font-weight: 600; padding: 11px 19px; }
 .toast { position: fixed; z-index: 20; bottom: 24px; left: 50%; transform: translate(-50%, 15px); opacity: 0; pointer-events: none; background: var(--active); color: var(--on-active); padding: 14px 22px; font-size: 12px; border-radius: 3px; box-shadow: 0 10px 40px #0003; max-width: calc(100% - 40px); width: max-content; transition: opacity .2s, transform .2s; }

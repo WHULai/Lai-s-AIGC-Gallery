@@ -28,8 +28,9 @@ npm run preview     # serve the production build locally
 - The theme follows the system preference until a visitor chooses light or dark.
 - Generated images are the default covers. Hover to see the original photograph. A comparison button provides the same interaction on touchscreens and keyboards.
 - Click a card to see the uncropped, full-size image and full prompt. Switch between original/generated views, open either image at its native size, copy the prompt, or copy a direct link.
-- Cards and the detail view include **`Use in ChatGPT`**, which opens ChatGPT with the full original prompt. Upload your photograph there, then send the prompt to try it.
-- Prompts are copied exactly as stored (apart from surrounding whitespace). The sample prompts are English originals; the UI and entry titles are bilingual. The interface does not silently translate prompt text.
+- In the detail view, values inside **`{{…}}`** are highlighted in yellow and can be edited directly. Edits are kept for each entry during the current page visit, including when closing and reopening a prompt; refreshing restores the source values.
+- Cards and the detail view include **`Use in ChatGPT`**, which opens ChatGPT with the complete prompt and any edited values. Upload your photograph there, then send the prompt to try it.
+- **`Copy prompt`** on cards and in the detail view uses the same edited values. The rest of the prompt, including `{{…}}` delimiters, stays exactly as stored (apart from surrounding whitespace). The sample prompts are English originals; the UI and entry titles are bilingual. The interface does not silently translate prompt text.
 - Entries with a source display **`Adapted from:`**, linking to the supplied source. Omit the source file when there is no source.
 - Search includes English/Chinese titles and prompt text. Search and date sorting work entirely in the browser.
 - The layout adapts to mobile screens, supports keyboard controls and Escape-to-close, and respects reduced-motion preferences.

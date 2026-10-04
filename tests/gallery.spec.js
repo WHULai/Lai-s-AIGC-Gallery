@@ -47,7 +47,8 @@ test('search, sorting and no-results recovery without categories or tags', async
   await expect(page.locator('#empty-state')).toBeHidden();
   await expect(page.locator('.prompt-card')).toHaveCount(entries.length);
   await page.getByLabel('Sort prompts').selectOption('oldest');
-  await expect(page.locator('.prompt-card h3').first()).toContainText('impasto');
+  const oldest = [...entries].sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id))[0];
+  await expect(page.locator('.prompt-card').first()).toHaveAttribute('data-id', oldest.id);
   await page.getByRole('searchbox').fill('第二世界');
   await expect(page.locator('.prompt-card')).toHaveCount(1);
   await expect(page.locator('.prompt-card')).toHaveAttribute('data-id', 'second-world');

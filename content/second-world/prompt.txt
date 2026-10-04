@@ -2,9 +2,7 @@ Please generate a “Second World” photographic re-creation poster based on th
 
 Aspect Ratio and Output Rules:
 
-The final image ratio must be 2:3, and the orientation must match the original photo:
-If the original is portrait → output a 2:3 portrait image;
-If the original is landscape → output a 3:2 landscape image.
+The final image ratio must be {{2:3}}, and the orientation must match the original photo.
 
 The final output must be only the generated “Second World” artwork.
 
